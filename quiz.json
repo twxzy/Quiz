@@ -1,6 +1,6 @@
 {
   "quiz-1":{
-    "pergunta": "Qual método retorna o índice da primeira ocorrência de uma substring em uma string?",
+    "pergunta": "1 - Qual método retorna o índice da primeira ocorrência de uma substring em uma string?",
     "A": "indexOf()",
     "B": "substring()",
     "C": "replace()",
@@ -9,7 +9,7 @@
   },
 
   "quiz-2":{
-    "pergunta": "Qual método é usado para transformar todos os caracteres de uma string em maiúsculas em JavaScript?",
+    "pergunta": "2 - Qual método é usado para transformar todos os caracteres de uma string em maiúsculas em JavaScript?",
     "A": "toUpperCase()",
     "B": "toLowerCase()",
     "C": "split()",
@@ -17,7 +17,7 @@
     "respostaCorreta": "toUpperCase()"
   },
     "quiz-3": {
-      "pergunta": "Qual método é usado para remover espaços em branco do início e do final de uma string?",
+      "pergunta": "3 - Qual método é usado para remover espaços em branco do início e do final de uma string?",
       "A": "trim()",
       "B": "padStart()",
       "C": "substring()",
@@ -26,7 +26,7 @@
     },
   
     "quiz-4": {
-      "pergunta": "Qual método retorna uma nova string com todas as letras minúsculas?",
+      "pergunta": "4 - Qual método retorna uma nova string com todas as letras minúsculas?",
       "A": "toUpperCase()",
       "B": "toLowerCase()",
       "C": "charAt()",
@@ -35,7 +35,7 @@
     },
   
     "quiz-5": {
-      "pergunta": "Qual método é utilizado para dividir uma string em um array de substrings?",
+      "pergunta": "5 - Qual método é utilizado para dividir uma string em um array de substrings?",
       "A": "split()",
       "B": "substring()",
       "C": "indexOf()",
@@ -44,7 +44,7 @@
     },
   
     "quiz-6": {
-      "pergunta": "Qual método retorna o valor de um caractere em uma posição específica de uma string?",
+      "pergunta": "6 - Qual método retorna o valor de um caractere em uma posição específica de uma string?",
       "A": "charAt()",
       "B": "substring()",
       "C": "replace()",
@@ -53,7 +53,7 @@
     },
   
     "quiz-7": {
-      "pergunta": "Qual método é usado para substituir a primeira ocorrência de uma substring em uma string?",
+      "pergunta": "7 - Qual método é usado para substituir a primeira ocorrência de uma substring em uma string?",
       "A": "replace()",
       "B": "substring()",
       "C": "split()",
@@ -62,7 +62,7 @@
     },
   
     "quiz-8": {
-      "pergunta": "Qual método retorna uma nova string com os caracteres de uma string invertidos?",
+      "pergunta": "8 - Qual método retorna uma nova string com os caracteres de uma string invertidos?",
       "A": "reverse()",
       "B": "split()",
       "C": "reverseString()",
@@ -71,7 +71,7 @@
     },
   
     "quiz-9": {
-      "pergunta": "Qual método retorna a parte de uma string entre dois índices?",
+      "pergunta": "9 - Qual método retorna a parte de uma string entre dois índices?",
       "A": "substring()",
       "B": "slice()",
       "C": "substr()",
@@ -80,7 +80,7 @@
     },
   
     "quiz-10": {
-      "pergunta": "Qual método retorna o número de vezes que uma substring aparece em uma string?",
+      "pergunta": "10 - Qual método retorna o número de vezes que uma substring aparece em uma string?",
       "A": "match()",
       "B": "replace()",
       "C": "search()",

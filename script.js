@@ -72,21 +72,32 @@ function proxima() {
 function escolha(respostaExata) {
 
   // Acessando o valor correto de "vamo" dentro do objeto "data"
-  let vamo = data[`quiz-${proximoQuiz}`][`${respostaExata}`];
-  console.log(vamo);
+  let vamo = data[`quiz-${proximoQuiz}`][`${respostaExata}`]
 
   // Obtém a resposta correta do quiz atual
-  let respostaCorreta = data[`quiz-${proximoQuiz}`].respostaCorreta;
-  console.log(respostaCorreta)
+  let respostaCorreta = data[`quiz-${proximoQuiz}`].respostaCorreta
 
   // Compara a resposta do usuário com a resposta correta
   if (vamo === respostaCorreta) {
+    
+    let exibirResposta = document.getElementById("respostaExata")
+    exibirResposta.innerHTML = "Resposta correta!"
+    exibirResposta.style.color = "green"
     console.log("Resposta correta!");
 
-    
-
+    setTimeout(() => {
+      proxima()
+      exibirResposta.innerHTML = ""
+    }, 1800);
 
   } else {
+    let exibirResposta = document.getElementById("respostaExata")
+    exibirResposta.innerHTML = "Resposta incorreta. Tente novamente."
+    exibirResposta.style.color = "red"
     console.log("Resposta incorreta. Tente novamente.");
+
+    setTimeout(() => {
+      exibirResposta.innerHTML = ""
+    }, 1800);
   }
 }
