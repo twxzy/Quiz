@@ -1,0 +1,56 @@
+@use 'variables'
+@use 'mixins'
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap')
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: "Sour Gummy", serif
+  font-weight: bold
+
+.container
+  background-color: variables.$dark-gray
+  @include mixins.d-center
+  height: 100vh
+
+.quiz
+  @include mixins.d-center
+  flex-direction: column
+  width: 700px
+  height: 650px
+  background-color: variables.$light-gray
+  border-radius: 15px
+  
+  h2
+    text-align: center
+    color: white  
+    width: 80%
+    font-weight: 400
+    margin-bottom: 30px
+
+.resposta
+  @include mixins.d-center
+  width: 80%
+  height: 50px
+  margin: 10px 0px 10px 0px
+  border-radius: 15px
+  background-color: white
+  cursor: pointer
+  p
+    font-size: 20px
+
+.resultado
+  margin-top: 30px
+  color: white
+
+.next
+  margin-top: 30px
+  padding: 10px 30px
+  border-radius: 5px
+  font-size: 20px
+  color: white
+  background-color: #198754
+  cursor: pointer
+  border: none

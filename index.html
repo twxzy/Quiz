@@ -3,10 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
+  <title>Quiz</title>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="Css/main.css">
+
 </head>
 <body>
-  
+  <div class="container">
+    <div class="quiz">
+      <h2 id="pergunta"></h2>
+      <div onclick="escolha('A')" id="A" class="resposta">
+        <p></p>
+      </div>
+      <div onclick="escolha('B')" id="B" class="resposta">
+        <p></p>
+      </div>
+      <div onclick="escolha('C')" id="C" class="resposta">
+        <p></p>
+      </div>
+      <div onclick="escolha('D')" id="D" class="resposta">
+        <p></p>
+      </div>
+      <div class="resultado">
+        <h3 id="respostaExata"></h3>
+      </div>
+        <button onclick="proxima()" class="next">Proxima</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
