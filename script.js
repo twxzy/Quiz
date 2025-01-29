@@ -77,6 +77,8 @@ function escolha(respostaExata) {
   // Obtém a resposta correta do quiz atual
   let respostaCorreta = data[`quiz-${proximoQuiz}`].respostaCorreta
 
+  let pts = document.getElementById("pontosExatos");
+
   // Compara a resposta do usuário com a resposta correta
   if (vamo === respostaCorreta) {
     
@@ -89,12 +91,20 @@ function escolha(respostaExata) {
       proxima()
       exibirResposta.innerHTML = ""
     }, 1800);
-
+    
+    let valorAtual = parseInt(pts.textContent) || 0; // Obtém o valor atual e converte para número
+    pts.textContent = valorAtual + 10; // Soma 10 e atualiza o texto
+    
   } else {
+
     let exibirResposta = document.getElementById("respostaExata")
     exibirResposta.innerHTML = "Resposta incorreta. Tente novamente."
     exibirResposta.style.color = "red"
-    console.log("Resposta incorreta. Tente novamente.");
+
+
+    let valorAtual = parseInt(pts.textContent) || 0; // Obtém o valor atual e converte para número
+    pts.textContent = Math.max(-0, valorAtual - 5); // Subtrai 5, mas impede valores negativos
+
 
     setTimeout(() => {
       exibirResposta.innerHTML = ""
