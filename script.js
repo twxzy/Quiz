@@ -33,7 +33,7 @@ fetch('quiz.json')
   .catch(error => console.error('Erro ao carregar o JSON:', error))
 
 
-//Proximo quizz
+//Pula para o proximo quiz
 function proxima() {
   
   proximoQuiz++
@@ -41,9 +41,6 @@ function proxima() {
   if (proximoQuiz === totalQuizzes) {
     proximoQuiz = 1; // Reseta para o primeiro quiz
   }
-
-
-  console.log(proximoQuiz)
 
   //Pergunta
   let pergunta = document.getElementById('pergunta')
@@ -98,7 +95,8 @@ function escolha(respostaExata) {
       proxima()
 
       //Remove o Texto "Resposta Correta!"
-      exibirResposta.innerHTML = ""
+      exibirResposta.innerHTML = "Escolha uma resposta!"
+      exibirResposta.style.color = 'white'
 
       //Remove cor do botão depois de acertar a respostar
       let buttonColors = document.getElementById(`${respostaExata}`)
@@ -130,7 +128,8 @@ function escolha(respostaExata) {
     setTimeout(() => {
 
       //Remove o Texto "Resposta "Resposta incorreta. Tente novamente."
-      exibirResposta.innerHTML = ""
+      exibirResposta.innerHTML = "Escolha uma resposta!"
+      exibirResposta.style.color = 'white'
 
       //Adiciona cor do botão quando errar a respostar
       let buttonColors = document.getElementById(`${respostaExata}`)

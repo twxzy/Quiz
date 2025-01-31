@@ -23,7 +23,7 @@
   width: 700px;
   background-color: #212529;
   border-radius: 15px;
-  padding: 60px 0px;
+  padding: 40px 0px;
 }
 .quiz h2 {
   text-align: center;
@@ -66,7 +66,7 @@
 
 .pontos-color {
   color: white;
-  margin-bottom: 40px;
+  margin: 30px 0px;
   color: white;
 }
 
@@ -76,6 +76,17 @@
   align-items: center;
   width: 400px;
   height: 30px;
+}
+
+.repeat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.repeat i {
+  font-size: 30px;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
