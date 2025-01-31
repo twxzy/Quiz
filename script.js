@@ -1,9 +1,8 @@
-
 let data
 let totalQuizzes
 let proximoQuiz = 1
 
-
+//Requisita perguntas e respostas
 fetch('quiz.json')
   .then(response => response.json())
   .then((json) => {
@@ -68,7 +67,6 @@ function proxima() {
 }
 
 
-
 function escolha(respostaExata) {
 
   // Acessando o valor correto de "vamo" dentro do objeto "data"
@@ -77,37 +75,67 @@ function escolha(respostaExata) {
   // Obtém a resposta correta do quiz atual
   let respostaCorreta = data[`quiz-${proximoQuiz}`].respostaCorreta
 
-  let pts = document.getElementById("pontosExatos");
+  let pts = document.getElementById("pontosExatos")
 
   // Compara a resposta do usuário com a resposta correta
-  if (vamo === respostaCorreta) {
+  if (vamo === respostaCorreta){
+
+    //Adiciona cor do botão quando acertar a respostar
+    let buttonColors = document.getElementById(`${respostaExata}`)
+    buttonColors.style.backgroundColor = '#198754'
+    buttonColors.style.color = 'white'
     
+    //Adiciona um texto de "Resposta Correta!"
     let exibirResposta = document.getElementById("respostaExata")
     exibirResposta.innerHTML = "Resposta correta!"
     exibirResposta.style.color = "green"
-    console.log("Resposta correta!");
-
+    console.log("Resposta correta!")
+    
+    //Depois de um timer ele remove o texto "Resposta Correta!" e executa o proximo quiz
     setTimeout(() => {
+
+      //Chama o funcão e executa o proximo quiz
       proxima()
+
+      //Remove o Texto "Resposta Correta!"
       exibirResposta.innerHTML = ""
+
+      //Remove cor do botão depois de acertar a respostar
+      let buttonColors = document.getElementById(`${respostaExata}`)
+      buttonColors.style.backgroundColor = 'white'
+      buttonColors.style.color = 'black'
     }, 1800);
     
-    let valorAtual = parseInt(pts.textContent) || 0; // Obtém o valor atual e converte para número
-    pts.textContent = valorAtual + 10; // Soma 10 e atualiza o texto
+    //Sistema de pontuação, se acertar a resposta ganha 10 PTS
+    let valorAtual = parseInt(pts.textContent) || 0;
+    pts.textContent = valorAtual + 10;
     
   } else {
 
+    //Adiciona cor do botão quando acertar a respostar
+    let buttonColors = document.getElementById(`${respostaExata}`)
+    buttonColors.style.backgroundColor = 'red'
+    buttonColors.style.color = 'white'
+
+    //Adiciona um texto de "Resposta incorreta. Tente novamente."
     let exibirResposta = document.getElementById("respostaExata")
     exibirResposta.innerHTML = "Resposta incorreta. Tente novamente."
     exibirResposta.style.color = "red"
 
+    //Sistema de pontuação, se errar a resposta perde 5 PTS
+    let valorAtual = parseInt(pts.textContent) || 0
+    pts.textContent = Math.max(-0, valorAtual - 5)
 
-    let valorAtual = parseInt(pts.textContent) || 0; // Obtém o valor atual e converte para número
-    pts.textContent = Math.max(-0, valorAtual - 5); // Subtrai 5, mas impede valores negativos
-
-
+    //Depois de um timer ele remove o texto "Resposta incorreta. Tente novamente."
     setTimeout(() => {
+
+      //Remove o Texto "Resposta "Resposta incorreta. Tente novamente."
       exibirResposta.innerHTML = ""
+
+      //Adiciona cor do botão quando errar a respostar
+      let buttonColors = document.getElementById(`${respostaExata}`)
+      buttonColors.style.backgroundColor = 'white'
+      buttonColors.style.color = 'black'
     }, 1800);
   }
 }
