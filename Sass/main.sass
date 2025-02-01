@@ -1,8 +1,13 @@
+//Variaveis
 @use 'variables'
+
+//Mixins
 @use 'mixins'
 
+//Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap')
 
+//Configurações padrão css
 *
   box-sizing: border-box
   margin: 0
@@ -15,6 +20,7 @@
   @include mixins.d-center
   height: 100vh
 
+//Container do quiz
 .quiz
   @include mixins.d-center
   flex-direction: column
@@ -30,6 +36,7 @@
     height: 70px
     margin-bottom: 30px
 
+//Buttons com opcões de respostas
 .resposta
   @include mixins.d-center
   width: 80%
@@ -41,10 +48,12 @@
   p
     font-size: 20px
 
+//Exibe se a resposta está correta ou errada
 .resultado
   margin-top: 30px
   color: white
 
+//butão do proximo quiz
 .next
   margin-top: 30px
   padding: 10px 30px
@@ -63,6 +72,7 @@
   width: 400px
   height: 30px
 
+//Reset de pontos 
 .repeat
   display: flex
   align-items: center
@@ -74,6 +84,7 @@
     color: white
     cursor: pointer
 
+//Nova aba de adicionar perguntas
 #adicionarPerguntas
   @include mixins.d-center
   flex-direction: column
@@ -100,7 +111,8 @@
     font-size: 30px
     color: white
     cursor: pointer
-
+    
+//Inputs de adicionar novas perguntas e respostas
 .addPerguntas, .nomePergunta, .respostaPergunta
   width: 80%
   padding-left: 15px
@@ -121,6 +133,7 @@
   height: 50px
   margin-top: 50px
 
+//botton de adicionar perguntas
 .adicionarButton 
   @include mixins.d-center
   flex-direction: column

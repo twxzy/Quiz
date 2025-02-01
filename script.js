@@ -167,41 +167,47 @@ function repeat() {
 }
 
 
-//Adicionar mais perguntas
-
+//Função para exibir ou remover a aba de adição de perguntas
 const adicionar = document.getElementById('adicionarPerguntas')
 
+//exibe a aba 
 function add() {
   adicionar.style.display = 'flex'
 }
 
+//remove a aba
 function fechar() {
   adicionar.style.display = 'none'
 }
 
-
-function textPergunta() {
-  let textPergunta = document.querySelectorAll('.nomePergunta')
-  textPergunta.value = 'red'
-}
-
+//Função que dispara o evento de adição de perguntas
 function adicionarQuiz(){
 
+  //Ao adicionar novas pergunta vai ser exibir um alerta de sucesso
   let adicionadoAlert = document.getElementById('adicionadoAlert')
   adicionadoAlert.innerHTML = 'Pergunta e respotas adicionadas com SUCESSO!!!'
+  
+  //Esse alerta vai ter a cor VERDE
   adicionadoAlert.style.color = '#198754'
 
+  //Ao adicionar novas pergunta o vai ser exibir um alerta de sucesso
   let addTitle = document.getElementById('addTitle')
   addTitle.innerHTML = 'Pergunta adicionada!'
+  
+  //Esse alerta vai ter a cor VERDE
   addTitle.style.color = '#198754'
 
+  //Timer que remove de algumas coisas quando a pergunta for adicionada
   setTimeout(() => {
 
+    //Chama a função de fechar o opção de adicionar novas perguntas
     fechar()
 
+    //Quando o tempo passar ele vai reexibir a mensagem e a cor anterior
     addTitle.innerHTML = 'Adicione uma pergunta!'
     addTitle.style.color = 'white'
 
+    //Quando o tempo passar ele vai reexibir a mensagem e a cor anterior
     adicionadoAlert.innerHTML = 'Adicione uma pergunta ao quiz!'
     adicionadoAlert.style.color = 'white'
   }, 1800);
