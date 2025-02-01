@@ -169,7 +169,40 @@ function repeat() {
 
 //Adicionar mais perguntas
 
+const adicionar = document.getElementById('adicionarPerguntas')
+
 function add() {
-  const adicionar = document.getElementById('adicionarPerguntas')
-  adicionar.style.display = 'block'
+  adicionar.style.display = 'flex'
+}
+
+function fechar() {
+  adicionar.style.display = 'none'
+}
+
+
+function textPergunta() {
+  let textPergunta = document.querySelectorAll('.nomePergunta')
+  textPergunta.value = 'red'
+}
+
+function adicionarQuiz(){
+
+  let adicionadoAlert = document.getElementById('adicionadoAlert')
+  adicionadoAlert.innerHTML = 'Pergunta e respotas adicionadas com SUCESSO!!!'
+  adicionadoAlert.style.color = '#198754'
+
+  let addTitle = document.getElementById('addTitle')
+  addTitle.innerHTML = 'Pergunta adicionada!'
+  addTitle.style.color = '#198754'
+
+  setTimeout(() => {
+
+    fechar()
+
+    addTitle.innerHTML = 'Adicione uma pergunta!'
+    addTitle.style.color = 'white'
+
+    adicionadoAlert.innerHTML = 'Adicione uma pergunta ao quiz!'
+    adicionadoAlert.style.color = 'white'
+  }, 1800);
 }

@@ -86,5 +86,53 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  display: none
+
+.adicionar
+  @include mixins.d-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 80%
+  margin-bottom: 60px
+  h1
+    color: white
+  i
+    font-size: 30px
+    color: white
+    cursor: pointer
+
+.addPerguntas, .nomePergunta, .respostaPergunta
+  width: 80%
+  padding-left: 15px
+  border-radius: 15px
+  font-size: 16px
+
+.addPerguntas
+  height: 50px
+  margin: 1px 0px
   
+
+.nomePergunta
+  height: 55px
+  margin-bottom: 50px
+
+.respostaPergunta
+  border-radius: 15px
+  height: 50px
+  margin-top: 50px
+
+.adicionarButton 
+  @include mixins.d-center
+  flex-direction: column
+  h3
+    margin-top: 30px
+    color: white
+  button
+    margin-top: 30px
+    padding: 10px 30px
+    border-radius: 5px
+    font-size: 20px
+    color: white
+    background-color: #198754
+    cursor: pointer
+    border: none

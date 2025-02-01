@@ -48,7 +48,22 @@
 
     <!--Adicionar mais perguntar-->
     <div id="adicionarPerguntas">
-      
+      <div class="adicionar">
+        <i class="bi bi-trash"></i>
+        <!--Adicionar perguntas-->
+        <h1 id="addTitle">Adicione uma pergunta!</h1>
+        <i onclick="fechar()" class="bi bi-x-circle"></i>
+      </div>
+      <input class="nomePergunta" onclick="textPergunta()" placeholder="Digite sua pergunta!" type="text">
+      <input class="addPerguntas" placeholder="Resposta: A" type="text">
+      <input class="addPerguntas" placeholder="Resposta: B" type="text">
+      <input class="addPerguntas" placeholder="Resposta: C" type="text">
+      <input class="addPerguntas" placeholder="Resposta: D" type="text">
+      <input class="respostaPergunta" placeholder="Digite a resposta correta!" type="text">
+      <div class="adicionarButton">
+        <h3 id="adicionadoAlert">Adicione uma pergunta ao quiz!</h3>
+        <button onclick="adicionarQuiz()">Adicionar</button>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
