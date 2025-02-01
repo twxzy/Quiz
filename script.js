@@ -87,6 +87,10 @@ function escolha(respostaExata) {
     exibirResposta.innerHTML = "Resposta correta!"
     exibirResposta.style.color = "green"
     console.log("Resposta correta!")
+
+    //Adiciona a cor vermelha dos pontos
+    let pontosColor = document.getElementById('pontosRedGreen')
+    pontosColor.style.color = '#198754'
     
     //Depois de um timer ele remove o texto "Resposta Correta!" e executa o proximo quiz
     setTimeout(() => {
@@ -102,6 +106,9 @@ function escolha(respostaExata) {
       let buttonColors = document.getElementById(`${respostaExata}`)
       buttonColors.style.backgroundColor = 'white'
       buttonColors.style.color = 'black'
+
+      //Remove a cor vermelha dos pontos
+      pontosColor.style.color = 'white'
     }, 1800);
     
     //Sistema de pontuação, se acertar a resposta ganha 10 PTS
@@ -124,6 +131,10 @@ function escolha(respostaExata) {
     let valorAtual = parseInt(pts.textContent) || 0
     pts.textContent = Math.max(-0, valorAtual - 5)
 
+    //Adiciona a cor vermelha dos pontos
+    let pontosColor = document.getElementById('pontosRedGreen')
+    pontosColor.style.color = 'red'
+
     //Depois de um timer ele remove o texto "Resposta incorreta. Tente novamente."
     setTimeout(() => {
 
@@ -135,6 +146,30 @@ function escolha(respostaExata) {
       let buttonColors = document.getElementById(`${respostaExata}`)
       buttonColors.style.backgroundColor = 'white'
       buttonColors.style.color = 'black'
+
+      //Remove a cor vermelha dos pontos
+      pontosColor.style.color = 'white'
     }, 1800);
   }
+}
+
+function repeat() {
+  //Resetando a numeração e voltando para o quiz 01
+  proximoQuiz = 0
+
+  //Requisitando o quiz 01
+  proxima()
+
+  //Reseta os PTS
+  let valorAtual = document.getElementById('pontosExatos')
+  valorAtual.innerHTML = 0
+
+}
+
+
+//Adicionar mais perguntas
+
+function add() {
+  const adicionar = document.getElementById('adicionarPerguntas')
+  adicionar.style.display = 'block'
 }
