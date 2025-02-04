@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="Css/main.css">
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+  <!--Container Quiz-->
+  <div class="container">
+    <div class="quiz">
+      <div class="repeat">
+
+        <!--Button para resetar os pontos e voltar para o quiz-01 -->
+        <i onclick="repeat()" title="Reset" class="bi bi-arrow-repeat"></i>
+        
+        <!--Pontos-->
+        <h1 class="pontos-color"><span id="pontosRedGreen"><span id="pontosExatos">0</span> pts</span></h1>
+
+        <!--Button para adicionar novas perguntas-->
+        <i onclick="add()" class="bi bi-plus-square"></i>
+      </div>
+
+      <!--Perguntas-->
+      <h2 id="pergunta"></h2>
+
+      <!--Opcões de resposta-->
+      <div onclick="escolha('A')" id="A" class="resposta">
+        <p></p>
+      </div>
+      <div onclick="escolha('B')" id="B" class="resposta">
+        <p></p>
+      </div>
+      <div onclick="escolha('C')" id="C" class="resposta">
+        <p></p>
+      </div>
+      <div onclick="escolha('D')" id="D" class="resposta">
+        <p></p>
+      </div>
+
+      <!--Exibição de texto afirmando se a resposta é correta ou incorreta-->
+      <div class="resultado">
+        <h3 id="respostaExata">Escolha uma resposta!</h3>
+      </div>
+
+        <!--Botão para exibir o proximo quiz-->
+        <button onclick="proxima()" class="next">Proxima</button>
+    </div>
+
+    <!--Adicionar mais perguntar-->
+    <div id="adicionarPerguntas">
+      
+      <!--Icons com funções-->
+      <div class="adicionar">
+        <i onclick="fechar()" class="bi bi-arrow-bar-left"></i>
+
+        <!--Input para adicionar respostas--->
+        <h1 id="addTitle">Adicione uma pergunta!</h1>
+        <i class="bi bi-x-square"></i>
+      </div>
+
+        <!--Inputs para adicionar respostas-->
+      <input id="inputQuestion" class="nomePergunta"placeholder="Digite sua pergunta!" type="text">
+      <input id="respostaA" class="addPerguntas" placeholder="Resposta: A" type="text">
+      <input id="respostaB" class="addPerguntas" placeholder="Resposta: B" type="text">
+      <input id="respostaC" class="addPerguntas" placeholder="Resposta: C" type="text">
+      <input id="respostaD" class="addPerguntas" placeholder="Resposta: D" type="text">
+
+      <!--Input para adicionar a resposta correta-->
+      <input id="respostaCerta" class="respostaPergunta" placeholder="Digite a resposta correta!" type="text">
+
+      <div class="adicionarButton">
+
+        <!--Exibe um texto de alerta-->
+        <h3 id="adicionadoAlert">Adicione uma pergunta ao quiz!</h3>
+
+        <!--Button para enviar as perguntas para o Json-->
+        <button onclick="addQuestion()">Adicionar</button>
+      </div>
+    </div>
+  </div>
+  
+  <!--JavaScript-->
+  <script src="script.js" defer></script>
+</body>
+</html>

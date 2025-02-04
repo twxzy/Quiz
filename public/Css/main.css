@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sour Gummy", serif;
+  font-weight: bold;
+}
+
+.container {
+  background-color: #181A1B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  background-color: #212529;
+  border-radius: 15px;
+  padding: 40px 0px;
+}
+.quiz h2 {
+  text-align: center;
+  color: white;
+  width: 80%;
+  font-weight: 400;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.resposta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+.resposta p {
+  font-size: 20px;
+}
+
+.resultado {
+  margin-top: 30px;
+  color: white;
+}
+
+.next {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #198754;
+  cursor: pointer;
+  border: none;
+}
+
+.pontos-color {
+  color: white;
+}
+
+#respostaExata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 30px;
+}
+
+.repeat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 60px;
+}
+.repeat i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#adicionarPerguntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+  background-color: #212529;
+  border-radius: 15px;
+  padding: 40px 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.adicionar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 60px;
+}
+.adicionar h1 {
+  color: white;
+}
+.adicionar i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.addPerguntas, .nomePergunta, .respostaPergunta {
+  width: 80%;
+  padding-left: 15px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.addPerguntas {
+  height: 50px;
+  margin: 1px 0px;
+}
+
+.nomePergunta {
+  height: 55px;
+  margin-bottom: 50px;
+}
+
+.respostaPergunta {
+  border-radius: 15px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.adicionarButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.adicionarButton h3 {
+  margin-top: 30px;
+  color: white;
+}
+.adicionarButton button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #198754;
+  cursor: pointer;
+  border: none;
+}
+
+#formAdd {
+  width: 80%;
+}
+
+/*# sourceMappingURL=main.css.map */

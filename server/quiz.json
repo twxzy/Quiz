@@ -1,0 +1,186 @@
+{
+  "quiz-1": {
+    "pergunta": "1 - Qual método adiciona um item no final de um array?",
+    "A": "push()",
+    "B": "pop()",
+    "C": "shift()",
+    "D": "unshift()",
+    "respostaCorreta": "push()"
+  },
+  "quiz-2": {
+    "pergunta": "2 - Qual método remove o último item de um array?",
+    "A": "pop()",
+    "B": "shift()",
+    "C": "slice()",
+    "D": "splice()",
+    "respostaCorreta": "pop()"
+  },
+  "quiz-3": {
+    "pergunta": "3 - Qual método adiciona um item no início de um array?",
+    "A": "unshift()",
+    "B": "push()",
+    "C": "pop()",
+    "D": "shift()",
+    "respostaCorreta": "unshift()"
+  },
+  "quiz-4": {
+    "pergunta": "4 - Qual método remove o primeiro item de um array?",
+    "A": "shift()",
+    "B": "pop()",
+    "C": "slice()",
+    "D": "splice()",
+    "respostaCorreta": "shift()"
+  },
+  "quiz-5": {
+    "pergunta": "5 - Qual método transforma uma string em letras maiúsculas?",
+    "A": "toUpperCase()",
+    "B": "toLowerCase()",
+    "C": "trim()",
+    "D": "replace()",
+    "respostaCorreta": "toUpperCase()"
+  },
+  "quiz-6": {
+    "pergunta": "6 - Qual método transforma uma string em letras minúsculas?",
+    "A": "toLowerCase()",
+    "B": "toUpperCase()",
+    "C": "split()",
+    "D": "replace()",
+    "respostaCorreta": "toLowerCase()"
+  },
+  "quiz-7": {
+    "pergunta": "7 - Qual método remove espaços no início e no final de uma string?",
+    "A": "trim()",
+    "B": "split()",
+    "C": "slice()",
+    "D": "substring()",
+    "respostaCorreta": "trim()"
+  },
+  "quiz-8": {
+    "pergunta": "8 - Qual método divide uma string em um array?",
+    "A": "split()",
+    "B": "slice()",
+    "C": "substring()",
+    "D": "replace()",
+    "respostaCorreta": "split()"
+  },
+  "quiz-9": {
+    "pergunta": "9 - Qual método retorna o índice da primeira ocorrência de um valor em uma string?",
+    "A": "indexOf()",
+    "B": "charAt()",
+    "C": "substring()",
+    "D": "search()",
+    "respostaCorreta": "indexOf()"
+  },
+  "quiz-10": {
+    "pergunta": "10 - Qual método substitui parte de uma string por outra?",
+    "A": "replace()",
+    "B": "split()",
+    "C": "trim()",
+    "D": "slice()",
+    "respostaCorreta": "replace()"
+  },
+  "quiz-11": {
+    "pergunta": "11 - Qual método retorna uma parte específica de um array sem modificá-lo?",
+    "A": "slice()",
+    "B": "splice()",
+    "C": "split()",
+    "D": "substring()",
+    "respostaCorreta": "slice()"
+  },
+  "quiz-12": {
+    "pergunta": "12 - Qual método altera um array removendo ou adicionando elementos?",
+    "A": "splice()",
+    "B": "slice()",
+    "C": "split()",
+    "D": "filter()",
+    "respostaCorreta": "splice()"
+  },
+  "quiz-13": {
+    "pergunta": "13 - Qual método verifica se um array contém um determinado valor?",
+    "A": "includes()",
+    "B": "indexOf()",
+    "C": "find()",
+    "D": "some()",
+    "respostaCorreta": "includes()"
+  },
+  "quiz-14": {
+    "pergunta": "14 - Qual método encontra o primeiro elemento de um array que satisfaz uma condição?",
+    "A": "find()",
+    "B": "filter()",
+    "C": "some()",
+    "D": "map()",
+    "respostaCorreta": "find()"
+  },
+  "quiz-15": {
+    "pergunta": "15 - Qual método retorna um novo array contendo apenas os elementos que atendem a uma condição?",
+    "A": "filter()",
+    "B": "find()",
+    "C": "map()",
+    "D": "every()",
+    "respostaCorreta": "filter()"
+  },
+  "quiz-16": {
+    "pergunta": "16 - Qual método percorre um array e executa uma função para cada elemento?",
+    "A": "forEach()",
+    "B": "map()",
+    "C": "filter()",
+    "D": "reduce()",
+    "respostaCorreta": "forEach()"
+  },
+  "quiz-17": {
+    "pergunta": "17 - Qual método transforma cada elemento de um array e retorna um novo array?",
+    "A": "map()",
+    "B": "forEach()",
+    "C": "filter()",
+    "D": "reduce()",
+    "respostaCorreta": "map()"
+  },
+  "quiz-18": {
+    "pergunta": "18 - Qual método junta todos os elementos de um array em uma única string?",
+    "A": "join()",
+    "B": "concat()",
+    "C": "reduce()",
+    "D": "split()",
+    "respostaCorreta": "join()"
+  },
+  "quiz-19": {
+    "pergunta": "19 - Qual método combina dois ou mais arrays em um novo array?",
+    "A": "concat()",
+    "B": "join()",
+    "C": "push()",
+    "D": "splice()",
+    "respostaCorreta": "concat()"
+  },
+  "quiz-20": {
+    "pergunta": "20 - Qual método reduz um array a um único valor com base em uma função?",
+    "A": "reduce()",
+    "B": "map()",
+    "C": "filter()",
+    "D": "forEach()",
+    "respostaCorreta": "reduce()"
+  },
+  "quiz-21": {
+    "pergunta": "21 - 2332",
+    "A": "323232",
+    "B": "322332232",
+    "C": "32323",
+    "D": "322323",
+    "respostaCorreta": "232323"
+  },
+  "quiz-22": {
+    "pergunta": "22 - 2343242",
+    "A": "34324",
+    "B": "23423",
+    "C": "234324",
+    "D": "423234",
+    "respostaCorreta": "423423"
+  },
+  "quiz-23": {
+    "pergunta": "23 - www",
+    "A": "wwww",
+    "B": "www",
+    "C": "ww",
+    "D": "www",
+    "respostaCorreta": "ww"
+  }
+}
